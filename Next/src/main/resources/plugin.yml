@@ -1,0 +1,4 @@
+name: FireFly
+author: Arca Interactive
+version: 1.0.0
+main: rip.firefly.FireFly

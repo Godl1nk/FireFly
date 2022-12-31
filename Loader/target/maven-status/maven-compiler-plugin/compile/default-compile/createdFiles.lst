@@ -1,0 +1,10 @@
+rip\firefly\loader\jar\EncryptedJarFile.class
+rip\firefly\loader\core\AbstractPluginLoader.class
+rip\firefly\loader\core\Plugin.class
+rip\firefly\loader\jar\ByteFile.class
+rip\firefly\loader\utils\CryptoUtils.class
+rip\firefly\loader\core\ExternalLoader.class
+rip\firefly\loader\utils\StringUtils.class
+rip\firefly\loader\LoaderPlugin.class
+rip\firefly\loader\utils\CryptoException.class
+rip\firefly\loader\jar\RemoteClassLoader.class

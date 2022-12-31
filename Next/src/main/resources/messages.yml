@@ -1,0 +1,59 @@
+prefix: "&eFire&6&lFly &7>"
+
+alert: "$prefix &6$player &eFailed Check &6$check &7(&c$vl&7)&r"
+join: "$prefix &6$player &eJoined Using &6$client"
+
+enableAlerts: "$prefix &6Enabled &7Alerts"
+disableAlerts: "$prefix &6Disabled &7Alerts"
+
+
+check:
+  format: "&6$name ($subtype)"
+  hover:
+      - "&7&m-------------------------------------------"
+      - "&6Description:"
+      - "&e$description"
+      - ""
+      - "&6Data:"
+      - "$data"
+      - "&7&m-------------------------------------------"
+  command: "tp $player"
+
+graph:
+  borderColor: "&7"
+  unfilledColor: "&f"
+  filledColor: "&c"
+  lineChar: "|"
+  maxLength: 20 # For Best Results Use 10, 20, or 24
+
+banBroadcast:
+  - "&c&m-----------------------------------------------------"
+  - "&cFireFly removed &e$player &cfrom the network"
+  - "&cReason: &eUnfair Advantage"
+  - "&c&m-----------------------------------------------------"
+
+command:
+  helpCommand:
+    - "&7&m-----------------------------------------------------"
+    - "&eFire&6&lFly &7> &eHelp"
+    - "&7&m-----------------------------------------------------"
+    - "&e/firefly checks &8&m-&6 Lists the enabled checks"
+    - "&e/firefly info &8&m-&6 Lists information about FireFly"
+    - "&e/firefly gui &8&m-&6 Opens FireFly's GUI"
+    - "&e/firefly inspect <player> &8&m-&6 Inspect A Player"
+    - "&7&m-----------------------------------------------------"
+  inspectCommand:
+    - "&7&m-----------------------------------------------------"
+    - "&eFire&6&lFly &7> &eInspect"
+    - "&7&m-----------------------------------------------------"
+    - "&6Inspection Of &e$player"
+    - "&6Mouse Sensitivity: &e$sensitivity%"
+    - "&6Cinematic Camera: &e$cinematic"
+    - "&6Ping: &e$ping"
+    - "&6Version: &e$version"
+    - "&6UUID: &e$uuid"
+    - "&7&m-----------------------------------------------------"
+  reloadCommand:
+    - "&aReloaded FireFly $version In $timems"
+
+

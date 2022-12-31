@@ -1,0 +1,46 @@
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+#                                                           #
+#    ______ _          ______ _                   _____     #
+#   |  ____(_)        |  ____| |            /\   / ____|    #
+#   | |__   _ _ __ ___| |__  | |_   _      /  \ | |         #
+#   |  __| | | '__/ _ \  __| | | | | |    / /\ \| |         #
+#   | |    | | | |  __/ |    | | |_| |   / ____ \ |____     #
+#   |_|    |_|_|  \___|_|    |_|\__, |  /_/    \_\_____|    #
+#                                __/ |                      #
+#                               |___/                       #
+#                                                           #
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+
+# Makes check names in alerts color coded depending on severity. #
+severitycolor: true
+
+# Set To False To Use BanWaves #
+instantbans: true
+
+# Disables Lagbacks #
+silent: false
+
+# Shows "Advanced" Debug Information, Useful For Developers #
+debug: false
+
+# Webhook Configuration #
+webhook:
+  # Enables / Disables The Webhook #
+  enabled: false
+  # Webhook URL #
+  url: "https://discordapp.com/api/webhooks/"
+
+# Time Configuration #
+time:
+  # How Many Minutes To Wait In Between BanWaves (If They Are Enabled) #
+  banwavetime: 60
+
+# Ban Configuration #
+ban:
+  # The Command Executed To Ban A Player #
+  command: "ban $player &e&lFire&6Fly &7> &rUnfair Advantage"
+  # VL Till Banned #
+  banvl: 15
+  # Crashes Player's Client On Ban #
+  crash: true
+  bans: 0

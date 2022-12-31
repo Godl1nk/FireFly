@@ -1,0 +1,78 @@
+prefix: "&e&lFire&6Fly &7>"
+
+# § »
+# Variables: $prefix, $player, $check, $data, $ping, and $vl
+alert: "$prefix &6$player &eFailed Check &6$check &7(&c$vl&7)&r"
+severity1: "&a"
+severity2: "&6"
+severity3: "&c"
+
+not_online: "&cCould not find a player by the name of '$player'"
+
+client_message: "$prefix &6$player &eJoined Using &6$client"
+punish:
+  addToBanWave: "$prefix &6$player &eWas Added To The &6Ban Wave"
+  removeFromBanWave: "$prefix &6$player &eWas Removed From The &6Ban Wave"
+  caughtUsingClient: "$prefix &6$player &eWas Banned For Using $client"
+  bannedInWave: "$prefix &6$player &eWas Banned In The Ban Wave"
+  waveEnded: "$prefix &eThe &6Ban Wave &eHas Ended, &6Cheating Of Any Type Is Against The Rules."
+
+webhook:
+  alert: "[**FireFly**] **$player** Failed Check **$check** (**$vl**)"
+  instantban: "[**FireFly**] **$player** Has Been Banned For Cheating."
+  startup: "[**FireFly**] FireFly Has Been Enabled."
+  shutdown: "[**FireFly**] FireFly Has Been Disabled."
+
+ban:
+  broadcast:
+    - "&c&m-----------------------------------------------------"
+    - "&cFireFly removed &e$player &cfrom the network"
+    - "&cReason: &eUnfair Advantage"
+    - "&c&m-----------------------------------------------------"
+  staffban:
+    - "&c&m-----------------------------------------------------"
+    - "&cStaff removed &e$player &cfrom the network"
+    - "&cReason: &eUnfair Advantage"
+    - "&c&m-----------------------------------------------------"
+
+commands:
+  firefly:
+    help:
+      - "&8&m---------------------------------------------------"
+      - '&e&lFire&6Fly > &7Help'
+      - ''
+      - '&e/firefly gui &8&m-&7 Opens the FireFly GUI.'
+      - '&e/firefly help &8&m-&7 Shows this help menu.'
+      - '&e/firefly list &8&m-&7 Lists all checks.'
+      - '&e/firefly toggle <check> &8&m-&7 Toggles a check.'
+      - '&e/firefly resetvio <player> &8&m-&7 Resets a player''s violations'
+      - '&e/firefly reload &8&m-&7 Reloads the config.'
+      - '&e/firefly banwave &8&m-&7 Starts a ban wave.'
+      - '&e/firefly banqueue &8&m-&7 Displays the ban wave queue.'
+      - '&e/firefly cancelban &8&m-&7 removes a player from the ban wave queue.'
+      - "&8&m---------------------------------------------------"
+    # Variables: $checks
+    list:
+      - "&8&m-----------------------------------------------------"
+      - '&e&lFire&6Fly &8> &7Checks'
+      - ''
+      - '&7$checks'
+      - "&8&m-----------------------------------------------------"
+    banqueue:
+      - "&8&m-----------------------------------------------------"
+      - '&e&lFire&6Fly &8> &7Ban Wave Queue'
+      - ''
+      - '&7$banqueue'
+      - "&8&m-----------------------------------------------------"
+    reloading: "&e&lFire&6Fly &8> &7Reloading config files..."
+    startingWave: "&e&lFire&6Fly &8> &7Starting Ban Wave"
+    notEnabled: "&e&lFire&6Fly &8> &7That Feature Is Not Enabled"
+    reload_success: "&e&lFire&6Fly &8> &aSuccessfully reloaded config files in $timems"
+    reload_failed: "&e&lFire&6Fly &8> &cFailed to reload config files. Check the console for more information."
+    invalid_check: "&e&lFire&6Fly &8> &cThe check &6$check &cdoes not exist."
+    toggled_check: "&e&lFire&6Fly &8> &7The check &6$check &7has been toggled: &f$state"
+    toggled_debug: "&e&lFire&6Fly &8> &7Toggled debug: &f$state"
+    resetviolations_success: "&e&lFire&6Fly &8> &aSuccessfully reset $player's violations."
+    resetviolations_failed: "&e&lFire&6Fly &8> &cFailed to reset $player's violations. Check console for more info."
+  alerts:
+    toggled: "&e&lFire&6Fly &8> &7Your alerts have been toggled: &f$state"

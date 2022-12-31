@@ -1,0 +1,5 @@
+name: FireFly
+version: '${project.version}'
+main: ac.firefly.Firefly
+authors: [ "OmenDoesStuff", "ThePython", "SwissDev" ]
+description: An Accurate And Lightweight Anti-Cheat For Spigot

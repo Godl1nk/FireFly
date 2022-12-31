@@ -1,0 +1,35 @@
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+#                                                                           #
+#                                                                           #
+#                     _______           ________                            #
+#                    / ____(_)_______  / ____/ /_  __                       #
+#                   / /_  / / ___/ _ \/ /_  / / / / /                       #
+#                  / __/ / / /  /  __/ __/ / / /_/ /                        #
+#                 /_/   /_/_/   \___/_/   /_/\__, /                         #
+#                                        _  /____/   __                     #
+#                                  / | / /__  _  __/ /_                     #
+#                                 /  |/ / _ \| |/_/ __/                     #
+#                                / /|  /  __/>  </ /_                       #
+#                               /_/ |_/\___/_/|_|\__/                       #
+#                                                                           #
+#                                                                           #
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+ban:
+    enabled: true
+    command: "ban $player &e&lFire&6Fly &7> &rUnfair Advantage"
+    lightningEffect: true
+
+command:
+    main: "firefly"
+    alerts: "alerts"
+    mainAlias: "ff"
+    alertsAlias: "ffalerts"
+
+webhook:
+    enabled: false
+    url: "https://discord.com/api/webhooks/"
+
+pluginHider:
+    spoofName: false
+    spoofPluginName: "NoCheatPlus"
