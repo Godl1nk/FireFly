@@ -20,3 +20,6 @@ There are currently no other official ways to contact me or any other firefly de
 ![image](https://user-images.githubusercontent.com/89894310/210121456-51ce03eb-8674-4095-ba86-7b83fe9ad905.png)
 ![image](https://user-images.githubusercontent.com/89894310/210121480-063492d7-3708-4436-82d8-cb40ecc1f54d.png)
 ![image](https://user-images.githubusercontent.com/89894310/210121550-70aba62c-7221-4075-adcb-de484cf6a55f.png)
+
+## Other Stuff (To be added)
+![image](https://user-images.githubusercontent.com/89894310/210161577-347a29bf-10b9-4379-b40a-cf4036e88332.png)
